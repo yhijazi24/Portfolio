@@ -7,44 +7,44 @@ This is the culmination of my ALX Intro To Software Engineering program, the gra
 As I near the culmination of my ALX SE program, I'm embarking on a **_capstone project_** to encapsulate my journey. This endeavor serves as a testament to my proficiency in web development, offering a glimpse into my skills and expertise. By crafting a candid portfolio, I aim to provide prospective clients with a comprehensive understanding of my work and identity as a developer. Through showcasing my experience, past projects, inspirations, and unique style, I strive to facilitate clients' decision-making processes, empowering them to determine whether I'm the ideal candidate for their projects.
 
 
-## Overview📜
+## Overview
 
 - My capstone project revolves around constructing my web development portfolio.
 - Its purpose is to provide an insight into my projects and convey my identity as a developer.
 - I endeavor to streamline the decision-making process for clients by crafting an informative and persuasive portfolio.
 
 
-## Features🌟
+## Features
 
 - The portfolio offers a user-friendly and easy-to-navigate layout.
 - It provides quick access to my skills, projects, and contact information.
 
 
-## Technologies Used⛏️
+## Technologies Used
 
 - I've utilized various technologies I've learned throughout the program to bring my portfolio to life.
 - These technologies include HTML, CSS, JavaScript and a bit of MySQL.
 - Additionally, I've used FIGMA for design and prototyping.
 
-## Demo🖼️
+## Demo
 
 - Here are a few screenshots to demonstrate the design and features of my web portfolio:
 <img src="/img/Capstone_Chart.png">
 
-<a href="https://www.figma.com">Figma</a>.
 
 
 
-## Roadmap🛣️
+
+## Roadmap
 
 - I will continuously refine and update my web development portfolio in terms of design, information, and achievements.
 - I look forward to engaging with clients and inspiring designers and developers through my portfolio.
 
-# Get In Touch🤙🏽
+# Get In Touch
 
 I'm Yahya Hijazi, a Moroccan and an engineering student at Casablanca.
 
 You can reach me through:
 
-- Email: <a>yahyahijazi643@gmail.com</a>📧
+- Email: <a>yahyahijazi643@gmail.com</a>
 
