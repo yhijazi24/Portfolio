@@ -29,6 +29,7 @@ As I near the culmination of my ALX SE program, I'm embarking on a **_capstone p
 ## Demo🖼️
 
 - Here are a few screenshots to demonstrate the design and features of my web portfolio:
+<img src="/img/Capstone_Chart.png">
 
 <a href="https://www.figma.com">Figma</a>.
 
