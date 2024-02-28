@@ -30,6 +30,8 @@ As I near the culmination of my ALX SE program, I'm embarking on a **_capstone p
 
 - Here are a few screenshots to demonstrate the design and features of my web portfolio:
 <img src="/img/Capstone_Chart.png">
+- Here is the Design I'm going with made with FIGMA :
+https://www.figma.com/file/78jf9OTe6KsiKsF1wfJqT7/Capstone?type=design&node-id=0%3A1&mode=dev&t=vzVan3rwNVxv2XdO-1 
 
 
 
