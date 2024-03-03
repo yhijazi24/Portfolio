@@ -20,22 +20,61 @@ function changeImages() {
 
 setInterval(changeImages, 3000);
 /*=============== View More and Hide Feature ===============*/
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var project5 = document.querySelectorAll(".project5");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      project5.style.display = "block";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      project5.style.display == "inline";
+document.addEventListener("DOMContentLoaded", function () {
+    const Btn = document.getElementById('myBtn');
+    const hideBtn = document.getElementById('hideBtn');
+    const project = document.querySelectorAll('.project__view');
+    const viewButtonContainer = document.querySelector('.projects__home');
+
+
+    project.forEach((view, index) => {
+        if (index >= project.length - 2) {
+            view.style.display = 'none';
+        }
+    });
+
+    Btn.addEventListener('click', function () {
+        project.forEach((view, index) => {
+            if (index >= project.length - 2) {
+                view.style.display = 'block';
+                hideBtn.style.display = 'block'
+            }
+        });
+
+        Btn.style.display = 'none';
+    });
+
+
+    hideBtn.addEventListener('click', function () {
+        project.forEach((view, index) => {
+            if (index >= project.length - 2) {
+                view.style.display = 'none';
+            }
+        });
+        viewButtonContainer.removeChild(hideBtn);
+        Btn.style.display = 'block';
+    });
+});
+
+/*=============== SHOW SCROLL UP ===============*/
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
     }
-  }
-
-
+    scrollToTopBtn.addEventListener("click", function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0; 
+    });
+});
 
 
