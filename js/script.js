@@ -1,3 +1,30 @@
+/*=============== Hamburger Menu ===============*/
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navbar");
+const navLinks = document.querySelectorAll(".nav__link");
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+function closeHamburgerMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+
+        const targetId = link.getAttribute("href").substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+            closeHamburgerMenu();
+        }
+    });
+   
+});
+
+
 /*=============== Image Auto Loader ===============*/
 const imageUrls = ['img/project1_img/ebook2.png', 'img/project1_img/ebook3.png', 'img/project1_img/ebook4.png'];
 
@@ -57,10 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*=============== SHOW SCROLL UP ===============*/
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-    window.onscroll = function() {
+    window.onscroll = function () {
         scrollFunction();
     };
 
@@ -71,9 +98,9 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollToTopBtn.style.display = "none";
         }
     }
-    scrollToTopBtn.addEventListener("click", function() {
+    scrollToTopBtn.addEventListener("click", function () {
         document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
     });
 });
 

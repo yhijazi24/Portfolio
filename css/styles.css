@@ -235,6 +235,23 @@ body.dark-theme {
     color: #A2161A;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #000;
+    background-color: #9C9C9C;
+
+}
+
 /*=============== HOME ===============*/
 .home {
     height: 650px;
@@ -501,8 +518,6 @@ body.dark-theme {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 190px;
-    width: 190px;
     width: 450px;
     height: 450px;
     position: relative;
@@ -802,3 +817,217 @@ body.dark-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
+@media screen and (min-width:280px) {
+
+    .home__title h1 {
+        font-size: 36px;
+    }
+
+    .about__title h2::before,
+    .about__title h2::after {
+        width: 90px;
+    }
+
+    .about__title h2::before {
+        left: calc(50% - -62px);
+    }
+
+    .about__title h2::after {
+        right: calc(50% - -62px);
+    }
+
+
+    .skills__lists {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .projects__list {
+        grid-template-columns: repeat(1, max-content);
+    }
+
+    .project {
+        width: 234px;
+        height: 234px;
+    }
+
+    .project__links {
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    .contact__gen {
+        flex-direction: column;
+        row-gap: 5.5rem;
+    }
+
+    .contact__data {
+        grid-template-columns: repeat(1, max-content);
+        text-align: center;
+
+    }
+
+    .contact-form {
+        scale: .6;
+    }
+}
+
+@media screen and (min-width:360px) {
+
+    .home__title h1 {
+        font-size: 46px;
+    }
+
+    .about__title h2::before,
+    .about__title h2::after {
+        width: 128px;
+    }
+
+    .about__title h2::before {
+        left: calc(50% - -80px);
+    }
+
+    .about__title h2::after {
+        right: calc(50% - -80px);
+    }
+
+    .project {
+        width: 285px;
+        height: 285px;
+    }
+
+    .project__links {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .contact-form {
+        scale: .8;
+    }
+}
+
+@media screen and (min-width:540px) {
+
+    .about__title h2::before,
+    .about__title h2::after {
+        width: 161px;
+
+    }
+
+    .skills__lists {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .contact-form {
+        scale: .9;
+    }
+
+    .contact__data {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: center;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar {
+        margin-top: 20px;
+        position: fixed;
+        left: -100%;
+        top: -21px;
+        flex-direction: column;
+        background-color: #A2161A;
+        opacity: 0.7;
+        width: 100%;
+        height: 257px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav__link {
+        color: white;
+    }
+
+    .nav__items {
+        margin-bottom: 30px;
+    }
+
+    .nav__list {
+        display: block;
+        justify-content: space-between;
+    }
+
+    .navbar.active {
+        left: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar.deactive {
+        left: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .home__title h1 {
+        font-size: 96px;
+    }
+    .about__title h2::before,
+    .about__title h2::after {
+        width: 300px;
+    }
+    .skills__lists {
+        grid-template-columns: repeat(3, max-content);
+    }
+    .projects__list {
+        grid-template-columns: repeat(2, max-content);
+    }
+    .contact-form {
+        scale: 1;
+    }
+    .contact__data {
+        grid-template-columns: repeat(3, max-content);
+    }
+    
+}
+@media screen and (min-width:1024px) {
+
+    .about__title h2::before,
+    .about__title h2::after {
+        width: 400px;
+    }
+    .project {
+        width: 450px;
+        height: 450px;
+    }
+    .project__links {
+        flex-direction: row;
+        row-gap: 2.3rem;
+    }
+    .contact__gen {
+        flex-direction: row;
+        row-gap: 9rem;
+    }
+}
