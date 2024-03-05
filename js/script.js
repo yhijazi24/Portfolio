@@ -26,26 +26,45 @@ navLinks.forEach((link) => {
 
 
 /*=============== Image Auto Loader ===============*/
-const imageUrls = ['img/project1_img/ebook2.png', 'img/project1_img/ebook3.png', 'img/project1_img/ebook4.png'];
+const imageUrls0 = ['img/project1_img/ebook2.png', 'img/project1_img/ebook3.png', 'img/project1_img/ebook4.png'];
 
-let index = 0;
+let index0 = 0;
 function changeImage() {
-    document.getElementById('image1').src = imageUrls[index];
-    index = (index + 1) % imageUrls.length;
+    document.getElementById('image1').src = imageUrls0[index0];
+    index0 = (index0 + 1) % imageUrls0.length;
 }
 
 setInterval(changeImage, 3000);
 
 
-const imageUrl = ['img/project2_img/mustad2.png', 'img/project2_img/mustad3.png', 'img/project2_img/mustad4.png', 'img/project2_img/mustad5.png', 'img/project2_img/mustad6.png', 'img/project2_img/mustad7.png', 'img/project2_img/mustad8.png', 'img/project2_img/mustad9.png', 'img/project2_img/mustad10.png', 'img/project2_img/mustad11.png', 'img/project2_img/mustad12.png', 'img/project2_img/mustad13.png'];
+const imageUrls1 = ['img/project2_img/mustad2.png', 'img/project2_img/mustad3.png', 'img/project2_img/mustad4.png', 'img/project2_img/mustad5.png', 'img/project2_img/mustad6.png', 'img/project2_img/mustad7.png', 'img/project2_img/mustad8.png', 'img/project2_img/mustad9.png', 'img/project2_img/mustad10.png', 'img/project2_img/mustad11.png', 'img/project2_img/mustad12.png', 'img/project2_img/mustad13.png'];
 
-let indexs = 0;
+let index1 = 0;
 function changeImages() {
-    document.getElementById('image2').src = imageUrl[indexs];
-    indexs = (indexs + 1) % imageUrl.length;
+    document.getElementById('image2').src = imageUrls1[index1];
+    index1 = (index1 + 1) % imageUrls1.length;
+}
+
+const imageUrls2 = ['img/project3_img/portfolio2.PNG', 'img/project3_img/portfolio3.PNG', 'img/project3_img/portfolio4.PNG'];
+
+let index2 = 0;
+function changeImages() {
+    document.getElementById('image3').src = imageUrls2[index2];
+    index2 = (index2 + 1) % imageUrls2.length;
 }
 
 setInterval(changeImages, 3000);
+img/project5__img/init1.PNG
+const imageUrls3 = ['img/project5__img/init1.PNG', 'img/project5__img/init2.PNG', 'img/project5__img/init3.PNG', 'img/project5__img/init4.PNG'];
+
+let index3 = 0;
+function changeImages() {
+    document.getElementById('image3').src = imageUrls3[index3];
+    index3 = (index3 + 1) % imageUrls3.length;
+}
+
+setInterval(changeImages, 3000);
+
 /*=============== View More and Hide Feature ===============*/
 document.addEventListener("DOMContentLoaded", function () {
     const Btn = document.getElementById('myBtn');

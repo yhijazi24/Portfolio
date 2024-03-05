@@ -402,7 +402,7 @@ body.dark-theme {
     justify-content: space-evenly;
     align-items: center;
     background: #1A1A1B;
-    opacity: 0.56;
+    opacity: 0.9;
     height: 190px;
     width: 190px;
 }
@@ -545,6 +545,7 @@ body.dark-theme {
     color: black;
     font-weight: 500;
     font-family: 'Public Sans', sans-serif;
+   
 }
 
 .project h3 {
@@ -555,7 +556,7 @@ body.dark-theme {
     font-family: 'Public Sans', sans-serif;
     text-align: center;
     color: black;
-
+ max-width: 291px;
 }
 
 .project__link button {
