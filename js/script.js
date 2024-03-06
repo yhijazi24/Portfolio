@@ -1,3 +1,4 @@
+/*=============== HEADER BACKGROUND COLOR ===============*/
 window.addEventListener('scroll', function () {
     var header = document.getElementById('header');
     if (window.scrollY > 100) {
