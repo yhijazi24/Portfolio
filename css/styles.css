@@ -190,7 +190,7 @@ body.dark-theme {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
+    background-color:transparent;
     z-index: var(--z-fixed);
     transition: box-shadow .4s, background-color .4s;
     display: flex;
@@ -866,7 +866,9 @@ body.dark-theme {
         text-align: center;
 
     }
-
+    .contact__data div {
+        max-width: 264px;
+    }
     .contact-form {
         scale: .6;
     }
@@ -1027,6 +1029,13 @@ body.dark-theme {
         flex-direction: row;
         row-gap: 2.3rem;
     }
+    .contact__gen {
+        flex-direction: column;
+        
+    }
+}
+@media screen and (min-width:1400px) {
+
     .contact__gen {
         flex-direction: row;
         row-gap: 9rem;
