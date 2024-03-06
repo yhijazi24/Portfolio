@@ -714,7 +714,7 @@ body.dark-theme {
     height: 150px;
 }
 
-.contact-form input[type="submit"] {
+.form__button {
     background-color: #0b0a0ab5;
     color: white;
     padding: 10px 20px;
@@ -723,7 +723,7 @@ body.dark-theme {
     cursor: pointer;
 }
 
-.contact-form input[type="submit"]:hover {
+.form__button:hover {
     background-color: #080808;
     transform: translateY(3px);
     box-shadow: 0 4px 32px hsla(0, 0%, 100%, 0.5);

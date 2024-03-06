@@ -18,6 +18,14 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Hijazi.Y Protfolio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("iwBfohomJQjWpKnnd");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -312,8 +320,8 @@
                     <!--==================== Contact Me ====================-->
 
                     <div class="contact-form ">
-                        <h2>Contact Me</h2>
-                        <form method="post" action="submit.php">
+                        <h2 class="form__title">Contact Me</h2>
+                        <form method="post">
 
                             <input type="text" id="name" name="name" placeholder="Name" required>
 
@@ -323,8 +331,10 @@
 
                             <textarea id="message" name="message" placeholder="Subject" required></textarea>
 
-                            <input type="submit" value="Submit">
+                            <button type="submit" class="form__button"
+                                onclick="SendMail(); reset(); return False;">Submit</button>
                         </form>
+                        <div id="message-container"></div>
                     </div>
                     <!--==================== Contact Info ====================-->
 
@@ -402,9 +412,7 @@
             </span>
         </footer>
         <!--========== SCROLL UP ==========-->
-
         <button id="scrollToTopBtn"><i class="ri-arrow-up-line"></i></button>
-
         <!--=============== SCROLLREVEAL ===============-->
         <script src="js/scrollreveal.min.js"></script>
         <!--=============== MAIN JS ===============-->

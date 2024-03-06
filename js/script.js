@@ -1,4 +1,4 @@
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var header = document.getElementById('header');
     if (window.scrollY > 100) {
         header.style.backgroundColor = '#a2161adb';
@@ -30,10 +30,8 @@ navLinks.forEach((link) => {
             closeHamburgerMenu();
         }
     });
-   
+
 });
-
-
 /*=============== Image Auto Loader ===============*/
 const imageUrls0 = ['img/project1_img/ebook2.png', 'img/project1_img/ebook3.png', 'img/project1_img/ebook4.png'];
 
@@ -134,3 +132,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+/*=============== CONTACT FORM SENDER ===============*/
+function SendMail() {
+    var Name = document.getElementById('name').value;
+    var Email = document.getElementById('email').value;
+    var Message = document.getElementById('message').value;
+    var templateParams = {
+        name: Name,
+        email: Email,
+        subject: Message,
+    };
+
+    emailjs.send('service_nuvubpw', 'template_ymd8vbm', templateParams)
+        .then(function (response) {
+            const messageContainer = document.getElementById('message-container');
+            messageContainer.textContent = "Form submitted successfully!";
+            document.querySelector('.contact-form form').style.display = 'none';
+            document.querySelector('.form__title').style.display = 'none';
+        }, function (error) {
+            console.log('FAILED...', error);
+        });
+}
