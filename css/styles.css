@@ -190,7 +190,7 @@ body.dark-theme {
     top: 0;
     left: 0;
     width: 100%;
-    background-color:transparent;
+    background-color: transparent;
     z-index: var(--z-fixed);
     transition: box-shadow .4s, background-color .4s;
     display: flex;
@@ -447,7 +447,34 @@ body.dark-theme {
     box-shadow: 0 4px 32px hsla(0, 0%, 100%, 0.5);
 }
 
-.skills__div:hover .skills__link {
+.skills__div div {
+    position: absolute;
+    visibility: hidden;
+    height: 180px;
+    width: 180px;
+    border-radius: 24px;
+    background-color: #A2161A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__div div span {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+.skills__div div span span {
+    font-size: 10px;
+    font-weight: 400;
+    color: black;
+}
+
+
+.skills__div:hover .skills__link,
+.skills__div:hover div {
     visibility: visible;
 }
 
@@ -545,7 +572,7 @@ body.dark-theme {
     color: black;
     font-weight: 500;
     font-family: 'Public Sans', sans-serif;
-   
+
 }
 
 .project h3 {
@@ -556,7 +583,7 @@ body.dark-theme {
     font-family: 'Public Sans', sans-serif;
     text-align: center;
     color: black;
- max-width: 291px;
+    max-width: 291px;
 }
 
 .project__link button {
@@ -866,9 +893,11 @@ body.dark-theme {
         text-align: center;
 
     }
+
     .contact__data div {
         max-width: 264px;
     }
+
     .contact-form {
         scale: .6;
     }
@@ -997,43 +1026,53 @@ body.dark-theme {
     .home__title h1 {
         font-size: 96px;
     }
+
     .about__title h2::before,
     .about__title h2::after {
         width: 300px;
     }
+
     .skills__lists {
         grid-template-columns: repeat(3, max-content);
     }
+
     .projects__list {
         grid-template-columns: repeat(2, max-content);
     }
+
     .contact-form {
         scale: 1;
     }
+
     .contact__data {
         grid-template-columns: repeat(3, max-content);
     }
-    
+
 }
+
 @media screen and (min-width:1024px) {
 
     .about__title h2::before,
     .about__title h2::after {
         width: 400px;
     }
+
     .project {
         width: 450px;
         height: 450px;
     }
+
     .project__links {
         flex-direction: row;
         row-gap: 2.3rem;
     }
+
     .contact__gen {
         flex-direction: column;
-        
+
     }
 }
+
 @media screen and (min-width:1400px) {
 
     .contact__gen {
