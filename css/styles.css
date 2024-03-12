@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Montserrat:wght@400;500;600&display=swap");
 
+
 /*=============== BASE ===============*/
 * {
     box-sizing: border-box;
@@ -711,13 +712,12 @@ img {
     margin-top: 3rem;
     margin-bottom: 1rem;
     text-align: center;
-    font-size: var(--small-font-size);
+    font-size: .813rem;
 }
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
     width: .6rem;
-
     background-color: #383838;
 }
 
