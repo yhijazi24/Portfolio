@@ -138,6 +138,13 @@ function SendMail() {
     var Name = document.getElementById('name').value;
     var Email = document.getElementById('email').value;
     var Message = document.getElementById('message').value;
+    
+  
+    if (Name.trim() === '' || Email.trim() === '' || Message.trim() === '') {
+        alert('Please fill in all fields.');
+        return false; 
+    }
+
     var templateParams = {
         name: Name,
         email: Email,
@@ -153,4 +160,7 @@ function SendMail() {
         }, function (error) {
             console.log('FAILED...', error);
         });
+
+    return false; 
 }
+
