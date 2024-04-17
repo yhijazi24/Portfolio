@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-/*=============== SHOW SCROLL UP ===============*/
+/*=============== SCROLL UP ===============*/
 document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
